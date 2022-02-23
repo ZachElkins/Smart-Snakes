@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="./sketch.js"></script>
+    <script type="text/javascript" src="./population.js"></script>
+    <script type="text/javascript" src="./snake.js"></script>
+    <script type="text/javascript" src="./target.js"></script>
+    <!-- nn and matrix javascript files adapted from TheCodingTrain -->
+    <!-- https://github.com/CodingTrain -->
+	  <script type="text/javascript" src="./matrix.js"></script>
+    <script type="text/javascript" src="./nn.js"></script>
+    <link rel="stylesheet" href="./main.css"/>
+    <!-- Graphing Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.0/c3.min.js" integrity="sha512-b0dcCrnmVzHad1jzTr64SduB809syFd6mjzzwcIvpxhckqhGCN1aHEnBotSGE7Hpk9o+g4PtiuFh+9ZR6j8onw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.0/c3.css" integrity="sha512-LXSCzOonanz6ZnZHBfAhhHJN/b/w6iOqj15MLtL+9O+BnaiI/AtozXqIG/OqqVKyvFUv9KiKZPurkYBpyPB/0Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Smart Snake</title>
+  </head>
+  <body>
+    <div id="content">
+      <div id="snakes">
+        <canvas id="canvas" width="500" height="500"></canvas>
+      </div>
+
+      <div id="data">
+      
+        <span id="display-generation">Current Generation | 0</span>
+        <br>
+
+        <span for="speed" id="display-speed">Learning Speed | 1</span>
+        <input id="speed" type="range" value="1" min="1" step="1" max="500" />
+        <br>
+
+        <span id="current-longest">Current Longest | 0</span><br>
+        <span id="longest-overall">Longest Overall | 0</span>
+        <br><br>
+
+        <div id="chart"></div>
+        
+      </div>
+    </div>
+  </body>
+</html>
